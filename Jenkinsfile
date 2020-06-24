@@ -1,17 +1,30 @@
 pipeline {
     agent any 
     stages {
-        stage('Example Build') {
+        stage('Build') {
             steps {
                 echo 'Build with MyDevOpsAcademy'
-                sh 'date'
+                // sh 'date'
             }
         }
-        stage('Example Test') {
+        
+        }
+    stages {
+        stage('Test') {
             steps {
                 echo 'Test with MyDevOpsAcademy'
-                sh 'date'
+                // sh 'date'
             }
         }
+        
+    }
+    stages {
+        stage('Deploy') {
+            steps {
+                echo 'Deploy with MyDevOpsAcademy'
+                // sh 'date'
+            }
+        }
+        
     }
 }
